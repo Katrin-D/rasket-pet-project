@@ -1,6 +1,8 @@
 # Pet project - Landing Page with animations.
 
-Next.js + TypeScript + Tailwind + Framer Motion
+Try out the demo on [Vercel](https://rasket-pet-project.vercel.app/)
+
+Next.js + TypeScript + Tailwind + Framer Motion + Vercel
 
 ## Sections
 
