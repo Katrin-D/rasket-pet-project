@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import BenefitList from "./BenefitList";
 import clsx from "clsx";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants } from "motion/react";
 
 interface IOneBenefit {
   benefitData: IBenefit;

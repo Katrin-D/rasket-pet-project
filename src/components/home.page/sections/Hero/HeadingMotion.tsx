@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion, Variants } from "motion/react";
 
 const containerVariants: Variants = {
   hidden: {
@@ -15,7 +15,7 @@ const containerVariants: Variants = {
   },
 };
 
-export const childVariants = {
+export const childVariants: Variants = {
   hidden: {
     opacity: 0,
   },
@@ -24,11 +24,11 @@ export const childVariants = {
     color: "var(--foreground)",
     transition: {
       opacity: {
-        type: "easeIn",
+        ease: "easeIn",
         duration: 0.2,
       },
       color: {
-        type: "easeIn",
+        ease: "easeIn",
         duration: 1.6,
         delay: 0.15,
       },

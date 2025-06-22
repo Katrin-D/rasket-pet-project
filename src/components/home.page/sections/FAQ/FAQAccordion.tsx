@@ -3,7 +3,7 @@
 import { faqs } from "@/data/faq";
 import React, { useState } from "react";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 
 const FAQAccordion = () => {
   const [expanded, setExpanded] = useState<false | number>(0);

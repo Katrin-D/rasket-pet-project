@@ -1,10 +1,10 @@
 "use client";
 
 import { logos } from "@/data/logos";
-import { motion } from "framer-motion";
+import { motion, Variants } from "motion/react";
 
-const itemVariants = {
-  animate: (i: number) => ({
+const itemVariants: Variants = {
+  stagger: (i: number) => ({
     opacity: [0, 1, 1, 0], //fade in (0 to 1), hold (1), fade out (1 to 0)
     y: [20, 0, 0, -20], //move from bottom (20) to center (0), hold (0), move up (0 to -20)
     transition: {
@@ -33,7 +33,7 @@ const Logos = () => {
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
-              animate="animate"
+              animate="stagger"
               custom={idx}
               variants={itemVariants}
             >

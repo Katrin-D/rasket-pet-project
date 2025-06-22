@@ -23,7 +23,7 @@ const Testimonials = () => {
         <div className="grid grid-flow-col auto-cols-max w-full overflow-hidden">
           {testimonials.map((item) => (
             <div
-              key={item.name}
+              key={item.message}
               className="p-6 md:p-8 m-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg border border-gray-200 bg-background-muted rounded-xl flex flex-col justify-between"
             >
               <p className="text-foreground-muted text-lg text-left">
@@ -53,7 +53,7 @@ const Testimonials = () => {
         <div className="grid grid-flow-col auto-cols-max w-full overflow-hidden">
           {testimonials.map((item) => (
             <div
-              key={item.name}
+              key={item.message}
               className="p-6 md:p-8 m-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg border border-gray-200 bg-background-muted rounded-xl flex flex-col justify-between"
             >
               <p className="text-foreground-muted text-lg text-left">

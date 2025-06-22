@@ -5,7 +5,7 @@ import Container from "./Container";
 import Link from "next/link";
 import { menuItems } from "@/data/menuItems";
 import { HiBars3, HiOutlineXMark } from "react-icons/hi2";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import Logo from "./Logo";
 
 const Header = () => {
@@ -71,6 +71,7 @@ const Header = () => {
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -200 }}
+            transition={{ bounce: 0 }}
             key="box"
             id="mobile-menu"
             className="md:hidden bg-white shadow-lg pt-6 pb-6 "

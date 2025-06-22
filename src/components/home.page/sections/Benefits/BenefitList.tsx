@@ -1,5 +1,5 @@
 import { IBenefitList } from "@/types";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { childVariants } from "./OneBenefit";
 
 const BenefitList = ({ title, description, icon }: IBenefitList) => {
