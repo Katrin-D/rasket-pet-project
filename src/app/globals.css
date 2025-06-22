@@ -1,35 +1,41 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #fed835;
-  --secondary: #304fff;
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-primary-accent: var(--primary-accent);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-background-muted: var(--background-muted);
 
-  --primary-accent: #e5c230;
-  --foreground-muted: #454545;
-  --background-muted: #f3f3f5;
-}
-
-html {
-  @apply scroll-smooth;
-}
-
-body {
-  @apply text-lg;
-
-  color: var(--foreground);
-  background: var(--background);
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  --breakpoint-xs: 576px;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --primary: #fed835;
+    --secondary: #304fff;
+
+    --primary-accent: #e5c230;
+    --foreground-muted: #454545;
+    --background-muted: #f3f3f5;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply text-lg;
+
+    color: var(--foreground);
+    background: var(--background);
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
 }
 

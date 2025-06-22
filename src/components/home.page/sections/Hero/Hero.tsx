@@ -9,9 +9,9 @@ const Hero = () => {
     <section id="hero" className="pt-14 flex flex-col items-center relative">
       {/* Background */}
       <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
-        <div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
+        <div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[40px_40px] mask-[radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
       </div>
-      <div className="absolute left-0 right-0 bottom-0 -z-10 backdrop-blur-[2px] h-40 bg-gradient-to-b from-transparent via-[rgba(233,238,255,0.5)] to-[rgba(202,208,230,0.5)]"></div>
+      <div className="absolute left-0 right-0 bottom-0 -z-10 backdrop-blur-[2px] h-40 bg-linear-to-b from-transparent via-[rgba(233,238,255,0.5)] to-[rgba(202,208,230,0.5)]"></div>
 
       {/* Hero content */}
       <Container>

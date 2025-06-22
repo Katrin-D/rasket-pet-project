@@ -26,7 +26,9 @@ const Stats = () => {
                 scrollSpyDelay={300}
               />
             </div>
-            <p className="text-foreground-muted text-lg">{description}</p>
+            <p className="text-foreground-muted text-lg text-pretty">
+              {description}
+            </p>
           </div>
         ))}
       </div>

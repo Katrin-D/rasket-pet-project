@@ -13,7 +13,7 @@ const Container = ({
   return (
     <div
       className={clsx(
-        "w-full max-w-screen-xl mx-auto",
+        "w-full max-w-(--breakpoint-xl) mx-auto",
         { "px-5": !noPadding },
         className
       )}

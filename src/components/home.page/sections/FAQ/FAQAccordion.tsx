@@ -9,9 +9,12 @@ const FAQAccordion = () => {
   const [expanded, setExpanded] = useState<false | number>(0);
 
   return (
-    <div className="border-b">
+    <div className="border-b border-gray-200">
       {faqs.map((faq, index) => (
-        <div key={index} className="border-t pt-7 pb-4 px-4 flex flex-col">
+        <div
+          key={index}
+          className="border-t border-gray-200 pt-7 pb-4 px-4 flex flex-col"
+        >
           <div
             className="flex justify-between items-start cursor-pointer pb-3"
             onClick={() => setExpanded(index === expanded ? false : index)}
