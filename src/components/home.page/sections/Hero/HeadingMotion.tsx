@@ -53,7 +53,7 @@ const HeadingMotion = ({ text }: { text: string }) => {
             key={index}
             variants={childVariants}
             aria-hidden="true"
-            className="custom-text-stoke text-transparent"
+            className="custom-text-stoke text-background"
           >
             {letter}
           </motion.span>
